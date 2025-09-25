@@ -7,8 +7,8 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
-        // target: 'https://roadsahayatabackend.vercel.app',
+        // target: 'http://localhost:5000',
+        target: 'https://roadsahayatanewbackend.vercel.app',
         changeOrigin: true
       }
     }

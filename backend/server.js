@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 5000;
 
 // ✅ CORS middleware (sabse pehle)
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'https://roadsahayata.vercel.app',
+  origin: process.env.CLIENT_URL || 'https://sadaksamadhan.vercel.app',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
@@ -27,7 +27,7 @@ app.use(cors({
 
 // ✅ Preflight requests handle
 app.options('*', cors({
-  origin: process.env.CLIENT_URL || 'https://roadsahayata.vercel.app',
+  origin: process.env.CLIENT_URL || 'https://sadaksamadhan.vercel.app',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
